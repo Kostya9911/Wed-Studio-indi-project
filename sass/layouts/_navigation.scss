@@ -2,21 +2,24 @@
   display: flex;
   align-items: center;
   margin-right: auto;
-  &__list {
+}
+.nav__list {
+  display: none;
+
+  @media screen and(min-width: 768px) {
     display: flex;
   }
+}
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
 
-  &__link {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-  }
-
-  &__link::after {
+  &::after {
     position: absolute;
 
     flex-direction: column;
@@ -32,8 +35,8 @@
     transition: opacity var(--time-anime) var(--cubic-biz-1);
   }
 
-  &__link:hover::after,
-  &__link:focus::after {
+  &:hover::after,
+  &:focus::after {
     opacity: 1;
   }
 }

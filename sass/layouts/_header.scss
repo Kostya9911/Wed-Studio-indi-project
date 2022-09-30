@@ -2,28 +2,56 @@
 
 .header {
   border-bottom: 1px solid var(--col-bd-11);
+}
+.header__wrapper {
+  display: flex;
+}
 
-  &__wrapper {
-    display: flex;
-  }
+.header__list-contact {
+  display: none;
 
-  &__list-contact {
+  @media screen and(min-width: 768px) {
     color: var(--second-cl-txt);
     display: flex;
+    flex-direction: column;
   }
+  @media screen and(min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.header__item-contact:not(:last-child) {
+  margin-right: 0px;
 
-  &__item-contact:not(:last-child) {
+  @media screen and(min-width: 1200px) {
     margin-right: 50px;
   }
+}
 
-  &__link-contact {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
+.header__link-contact {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .header &--top {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+      padding-top: 21px;
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+    }
   }
+  .header &--bottom {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+      padding-bottom: 20px;
+      padding-top: 0px;
+    }
+  }
+}
 
-  &__icon-contact {
-    fill: currentColor;
-    margin-right: 10px;
+.header__icon-contact {
+  fill: currentColor;
+  margin-right: 10px;
+
+  @media screen and(min-width: 1200px) {
+    margin-right: 8px;
   }
 }
