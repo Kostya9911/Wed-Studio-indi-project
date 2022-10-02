@@ -284,6 +284,35 @@ img {
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)), url(../img/hero/Img_sm_@1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero__overlay {
+    background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)), url(../img/hero/Img_sm_@2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .section-hero__overlay {
+    background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)), url(../img/hero/Img_md_@1x.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .section-hero__overlay {
+    background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)), url(../img/hero/Img_md_@2x.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .section-hero__overlay {
+    background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)), url(../img/hero/Img_lg_@1x.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .section-hero__overlay {
+    background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)), url(../img/hero/Img_lg_@2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-hero__overlay {
