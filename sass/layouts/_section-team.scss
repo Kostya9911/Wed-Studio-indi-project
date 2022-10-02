@@ -1,14 +1,28 @@
 .section-team {
   background-color: var(--srcond-bcg-cl);
-  &__list {
-    display: flex;
-    justify-content: space-between;
+}
+
+.section-team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0px auto;
+}
+
+.section-team__item-team {
+  background-color: var(--ligt-cl-txt);
+  border-radius: 0px 0px 4px 4px;
+  max-width: 450px;
+  box-shadow: var(--shad-12);
+
+  @media screen and(min-width: 768px) {
+    max-width: 354px;
   }
 
-  &__item-team {
-    background-color: var(--ligt-cl-txt);
-    border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    box-shadow: var(--shad-12);
+  @media screen and(min-width: 1200px) {
+    max-width: 270px;
   }
+}
+.section-team__img-team {
+  width: 100%;
 }
