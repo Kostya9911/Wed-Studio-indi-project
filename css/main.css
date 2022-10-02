@@ -862,7 +862,7 @@ img {
   padding: 63px 24px;
   align-items: center;
   justify-content: center;
-  transform: translateY(100%);
+  transform: translateY(100.5%);
   transition: transform var(--time-anime) var(--cubic-biz-1);
 }
 
@@ -870,6 +870,11 @@ img {
   font-size: 18px;
   line-height: 1.55;
   color: var(--ligt-cl-txt);
+}
+@media screen and (max-width: 479px) {
+  .portfolio__overlay-discr {
+    font-size: 16px;
+  }
 }
 
 .portfolio__descr-project {

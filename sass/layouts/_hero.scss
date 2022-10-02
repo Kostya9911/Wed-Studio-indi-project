@@ -5,7 +5,6 @@
 }
 .section-hero__overlay {
   max-width: 1600px;
-  // max-width: 480px;
   height: 400px;
   padding: 118px 0;
 
@@ -46,15 +45,10 @@
   @media screen and(min-width: 1200px) {
     height: 600px;
     padding: 200px 0;
-
-    // background-image: linear-gradient(to bottom, var(--col-grad-12), var(--col-grad-12)),
-    //   url(../img/img-bcg-hero.jpg);
   }
 }
 
 // .section-hero__container {
-//   justify-content: center;
-// }
 
 .section-hero__title {
   font-weight: 900;
