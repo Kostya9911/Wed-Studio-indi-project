@@ -3,8 +3,12 @@
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 .register-form__group {
   margin-bottom: 20px;
@@ -35,6 +39,11 @@
   border: none;
 
   transition: background-color var(--time-anime) var(--cubic-biz-1);
+
+  @media screen and (max-width: 479px) {
+    width: 170px;
+    height: 40px;
+  }
 
   &:hover,
   &:focus {
@@ -131,13 +140,24 @@
 }
 
 .register-form__desc {
-  font-size: 14px;
   color: var(--second-cl-txt);
   user-select: none;
+  line-height: 1.17;
+  font-size: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .register-form__link {
-  line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--link-cl-txt);
+  line-height: 1.17;
+  font-size: 12px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.71;
+    font-size: 14px;
+  }
 }
