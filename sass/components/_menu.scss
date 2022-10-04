@@ -22,7 +22,7 @@
   width: 100%;
   height: 100%;
 
-  padding: 48px 40px;
+  padding: 40px 28px;
   background-color: var(--ligt-cl-txt);
 
   display: flex;
@@ -32,6 +32,10 @@
   transition: transform 400ms;
   &.is-open {
     transform: translateX(0);
+
+    @media screen and(min-width: 480px) {
+      padding: 48px 40px;
+    }
   }
 }
 .mobile-menu-container__close_btn {
@@ -136,9 +140,13 @@
 
 .socials-mobile__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--link-cl-txt);
   text-decoration: none;
+
+  @media screen and(min-width: 480px ) {
+    font-size: 18px;
+  }
 }
